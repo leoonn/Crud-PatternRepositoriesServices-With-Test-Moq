@@ -12,7 +12,7 @@ namespace Test_RepositoryPattern_Moq
     public class ProductTest
     {
         [Fact]
-        public void Post_InsertMethod_ShouldReturnedStatusCodeOk()
+        public void Post_InsertMethod_ShouldReturnRedirectToActionResult()
         {
             var repoMock = new Mock<IBaseRepository<Product>>();
             var serviceMock = new Mock<IBaseService<Product>>();
